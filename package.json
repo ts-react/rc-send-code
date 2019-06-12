@@ -2,16 +2,26 @@
   "name": "@jiumao/rc-send-code",
   "version": "0.0.1",
   "description": "发送验证码倒计时组件",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "sendCode"
+  ],
   "scripts": {
     "bootstrap": "yarn || npm i",
+    "prepare": "yarn build",
     "build": "father build",
     "doc:dev": "father doc dev",
     "doc:build": "cross-env DOCZ_BASE=/rc-send-code/ father doc build",
-    "deploy": "father doc deploy"
+    "gh-pages": "yarn doc:build && gh-pages -d .doc"
   },
   "repository": "git@github.com:ts-react/rc-send-code.git",
   "author": "wangxingkang <wangxingkang@sensoro.com>",
@@ -26,9 +36,17 @@
   },
   "devDependencies": {
     "@types/react": "^16.8.3",
+    "cross-env": "^5.2.0",
     "father": "^2.7.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.6",
     "typescript": "^3.5.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8.9.0"
   }
 }
