@@ -1,0 +1,19 @@
+{
+  "name": "@jiumao/rc-send-code",
+  "version": "0.0.1",
+  "description": "发送验证码倒计时组件",
+  "main": "index.js",
+  "repository": "git@github.com:ts-react/rc-send-code.git",
+  "author": "wangxingkang <wangxingkang@sensoro.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "antd": "^3.19.3"
+  },
+  "devDependencies": {
+    "father": "^2.7.2"
+  }
+}
