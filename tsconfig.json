@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "declaration": true,
+    "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+  "include": ["./src"],
+  "exclude": [
+    "node_modules"
+  ]
 }

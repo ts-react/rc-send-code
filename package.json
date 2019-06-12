@@ -3,6 +3,16 @@
   "version": "0.0.1",
   "description": "发送验证码倒计时组件",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "bootstrap": "yarn || npm i",
+    "build": "father build",
+    "doc:dev": "father doc dev",
+    "doc:build": "cross-env DOCZ_BASE=/rc-send-code/ father doc build",
+    "deploy": "father doc deploy"
+  },
   "repository": "git@github.com:ts-react/rc-send-code.git",
   "author": "wangxingkang <wangxingkang@sensoro.com>",
   "license": "MIT",
@@ -11,9 +21,14 @@
     "react-dom": ">=16.0.0"
   },
   "dependencies": {
-    "antd": "^3.19.3"
+    "antd": "^3.19.3",
+    "awe-utils": "^0.0.7"
   },
   "devDependencies": {
-    "father": "^2.7.2"
+    "@types/react": "^16.8.3",
+    "father": "^2.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.1"
   }
 }

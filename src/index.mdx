@@ -1,0 +1,28 @@
+---
+route: /
+name: 'SendCode'
+---
+import { Playground, Props } from 'docz';
+import SendCode from './send-code';
+
+# SendCode
+
+## 基本
+
+<Playground>
+  <SendCode onCaptcha={() => { return true; }}  />
+</Playground>
+
+## Promise
+
+<Playground>
+  <SendCode
+    onCaptcha={() => {
+      return new Promise((resolve, reject) => {
+        setTimeout(function () {
+          resolve();
+        }, 2000)
+      });
+    }}
+  />
+</Playground>
