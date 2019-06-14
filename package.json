@@ -1,6 +1,6 @@
 {
   "name": "@jiumao/rc-send-code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "发送验证码倒计时组件",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
