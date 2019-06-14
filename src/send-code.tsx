@@ -1,6 +1,6 @@
 import React from 'react';
-import Button, { ButtonProps } from 'antd/es/button';
-import 'antd/es/button/style/index.css';
+import { Button } from 'antd';
+import { ButtonProps } from 'antd/es/button';
 import { getTemplateText } from './utils';
 import { isPromise } from 'awe-utils';
 

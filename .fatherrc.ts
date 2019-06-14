@@ -3,12 +3,9 @@ import { IBundleOptions } from 'father';
 const options: IBundleOptions = {
   esm: 'rollup',
   cjs: 'rollup',
-  umd: {
-    name: 'sendCode',
-    globals: {
-      react: 'React'
-    }
-  }
+  extraBabelPlugins: [
+    ['import', { libraryName: 'antd', style: true }]
+  ]
 };
 
 export default options;
