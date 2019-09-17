@@ -5,6 +5,8 @@
 
 > 发送验证码倒计时组件，基于[ant-design](https://ant.design/index-cn)Button组件
 
+**注意:** 该组件已收录在[ant-design-plus](https://github.com/alitajs/ant-design-plus) 该项目归档
+
 ## 安装和使用
 
 * 安装依赖
